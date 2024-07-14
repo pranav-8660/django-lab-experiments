@@ -1,0 +1,7 @@
+python manage.py runserver
+
+in browser:
+http://127.0.0.1:8000/
+http://127.0.0.1:8000/contactus/
+http://127.0.0.1:8000/aboutus/
+http://127.0.0.1:8000/home/

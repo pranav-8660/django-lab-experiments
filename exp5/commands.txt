@@ -1,0 +1,16 @@
+python manage.py shell
+from myapp.models import Course, Student
+course1 = Course.objects.create(course_code="CS101", course_name="DAA", course_credits=3)
+course2 = Course.objects.create(course_code="MATH201", course_name="MC", course_credits=4)
+course3 = Course.objects.create(course_code="PHYS301", course_name="Phy", course_credits=4)
+student1 = Student.objects.create(student_usn="USN001", student_name="john", student_sem=2)
+student1 = Student.objects.create(student_usn="USN002", student_name="Bob", student_sem=2)
+student1 = Student.objects.create(student_usn="USN003", student_name="Alice", student_sem=2)
+exit()
+python manage.py runserver
+python manage.py makemigrations myapp
+python manage.py migrate
+
+in browser:
+http://127.0.0.1:8000/reg/
+http://127.0.0.1:8000/course_search/
